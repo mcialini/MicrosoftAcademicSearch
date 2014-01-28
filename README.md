@@ -1,0 +1,5 @@
+The Microsoft Academic Search is a research database which covers more than 50 million publications and over 19 million authors across a variety of domains. One of the main challenges with providing this service is caused by author-name ambiguity. There are many authors in the database which have unique IDs, but are the same author in reality. Given several csv files (most importantly Author.csv and PaperAuthor.csv), the task of this project is to determine which authors are duplicates.
+
+The data mining algorithm I used in this project was extensive, and involved searching for a series of name variations of each author to see if perhaps they were listed under a nickname, or their name was misspelled. For example, one of the heuristics was to check all possible abbreviations of a person's name and see if that was listed under a different ID. So for John Doe Smith, the code would search for John D Smith, J Doe Smith, J D Smith, and J Smith.
+
+After applying several of these heuristics, I received a 97.816% accuracy rating.
